@@ -18,7 +18,7 @@ public class AuthController {
 
     public AuthController(AuthService authService) {
         this.authService = authService;
-    }
+    }   
 
     @PostMapping(value = "login")
     public ResponseEntity<AuthResponse> login(@RequestBody LoginRequest request)

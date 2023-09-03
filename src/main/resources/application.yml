@@ -1,12 +1,18 @@
 spring:
+  servlet:
+    multipart:
+      max-file-size: 500MB
   datasource:
-    url: jdbc:postgresql://localhost:5432/dbauthspring
+    url: jdbc:postgresql://localhost:5432/dbauthspring2
     username: postgres
     password: 1234
     driver-class-name: org.postgresql.Driver
+    #url: jdbc:postgresql://containers-us-west-52.railway.app:6600/railway
+    #username: postgres
+    #password: cBbTLoGsWkgFnOBVzQk1
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: false
     properties:
       hibernate:
