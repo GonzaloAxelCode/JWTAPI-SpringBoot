@@ -5,6 +5,7 @@ import com.JWT.JsonWebToken.Upload.Etnia.MaestroHisEtnia;
 import com.JWT.JsonWebToken.Upload.Pais.MaestroHisPais;
 import com.JWT.JsonWebToken.Upload.TipoDoc.MaestroTipoDoc;
 
+import com.JWT.JsonWebToken.Upload.UbigeoReniec.MaestroHisUbigeoIneiReniec;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -58,14 +59,16 @@ public class MaestroHisPaciente {
     @Column(name = "Ubigeo_Nacimiento")
     private Integer ubigeoNacimiento;
 
-    @Column(name = "Ubigeo_Reniec")
-    private Integer ubigeoReniec;
+    @ManyToOne
+    @JoinColumn(name = "Ubigeo_Reniec",referencedColumnName = "id_ubigueo_reniec", unique = true, nullable = true)
+    private MaestroHisUbigeoIneiReniec ubigeoReniec;
 
     @Column(name = "Domicilio_Reniec")
     private String domicilioReniec;
 
-    @Column(name = "Ubigeo_Declarado")
-    private Integer ubigeoDeclarado;
+    @ManyToOne
+    @JoinColumn(name = "Ubigeo_Declarado",referencedColumnName = "id_ubigueo_inei", unique = true, nullable =true)
+    private MaestroHisUbigeoIneiReniec ubigeoDeclarado;
 
     @Column(name = "Domicilio_Declarado")
     private Integer domicilioDeclarado;

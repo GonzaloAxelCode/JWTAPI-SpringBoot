@@ -43,7 +43,6 @@ public class MaestroUbigeoIneiReniecController {
             CsvUploadConfig config = new CsvUploadConfig();
             config.setTableName(name_table);
             config.setColumnNames(new String[]{
-
                     "id_ubigueo_inei",
                     "id_ubigueo_reniec",
                     "departamento",

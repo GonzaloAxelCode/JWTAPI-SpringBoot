@@ -14,10 +14,10 @@ import lombok.NoArgsConstructor;
 public class MaestroHisUbigeoIneiReniec {
 
     @Id
-    @Column(name = "Id_Ubigueo_Inei")
+    @Column(name = "Id_Ubigueo_Inei",columnDefinition = "INTEGER", unique = true, nullable = false)
     private Integer idUbigueoInei;
 
-    @Column(name = "Id_Ubigueo_Reniec")
+    @Column(name = "Id_Ubigueo_Reniec", unique = true, nullable = false)
     private Integer idUbigueoReniec;
 
     @Column(name = "Departamento")
@@ -46,7 +46,5 @@ public class MaestroHisUbigeoIneiReniec {
 
     @Column(name = "Codigo_Distrito_Reniec")
     private Integer codigoDistritoReniec;
-
-
 
 }

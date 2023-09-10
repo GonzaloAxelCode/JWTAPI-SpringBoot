@@ -34,11 +34,11 @@ public class MaestroHisEstablecimiento {
     @Column(name = "Red")
     private String red;
 
-    @Column(name = "Codigo_MicroRed")
-    private Integer codigoMicroRed;
+    @Column(name = "Codigo_Microred")
+    private Integer codigoMicrored;
 
-    @Column(name = "MicroRed")
-    private String microRed;
+    @Column(name = "Microred")
+    private String microred;
 
     @Column(name = "Codigo_Unico")
     private Integer codigoUnico;

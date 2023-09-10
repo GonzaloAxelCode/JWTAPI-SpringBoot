@@ -3,6 +3,7 @@ package com.JWT.JsonWebToken.Upload.Cpms;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,8 @@ public class MaestroHisCieCpms {
     @Column(name = "Codigo_Item")
     private String codigoItem;
 
-    @Column(name = "Descripcion_Item")
+    @Column(name = "Descripcion_Item",columnDefinition = "TEXT")
+    @Lob
     private String descripcionItem;
 
     @Column(name = "Fg_Tipo")

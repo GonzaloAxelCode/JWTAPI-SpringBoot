@@ -43,7 +43,7 @@ public class MaestroHisPaisController {
                     "string"
             });
 
-            csvUploadService.uploadCsv(file, config,delimiter);
+            csvUploadService.uploadCsv(file, config,delimiter,encoding);
 
             SuccessResponse successResponse = SuccessResponse.builder()
                     .successMessage("Importacion Exitosa")

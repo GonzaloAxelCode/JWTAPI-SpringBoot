@@ -7,11 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CsvUploadConfig {
-
+public class ReferenceForeingKey {
     private String tableName;
-    private String[] columnNames;
-    private String[] columnTypes;
-    private ReferenceForeingKey[] setForeingKeys;
-    private ItemRow[] rowsCsv;
+    private String columnName;
 }

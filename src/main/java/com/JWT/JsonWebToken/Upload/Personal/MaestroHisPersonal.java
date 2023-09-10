@@ -56,7 +56,7 @@ public class MaestroHisPersonal {
     private MaestroHisColegio colegio;
 
     @ManyToOne
-    @JoinColumn(name = "Id_Establecimiento", referencedColumnName = "Id_Establecimiento")
+    @JoinColumn(name = "Id_Establecimiento", referencedColumnName = "Id_Establecimiento",nullable = true)
     private MaestroHisEstablecimiento establecimiento;
 
     @Column(name = "Numero_Colegiatura", length = 255)
